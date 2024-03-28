@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import {FontDecorator} from "./decorators/nextjs-font-decorator";
 
 const preview: Preview = {
   parameters: {
@@ -8,7 +9,9 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+
   },
+  decorators: [FontDecorator],
 };
 
 export default preview;
