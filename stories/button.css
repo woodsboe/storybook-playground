@@ -1,3 +1,11 @@
+:root.dark {
+  --primary-button-background-color: #334444;
+
+}
+:root {
+  --primary-button-text-color: #fff;
+  --primary-button-background-color: #1ea7fd;
+}
 .storybook-button {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -8,8 +16,8 @@
   line-height: 1;
 }
 .storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
+  color: var(--primary-button-text-color, #fff);
+  background-color: var(--primary-button-background-color, #1ea7fd);
 }
 .storybook-button--secondary {
   color: #333;
